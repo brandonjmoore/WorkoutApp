@@ -18,10 +18,12 @@
 		BF0D586A1E8CDFC700D35FBA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0D58681E8CDFC700D35FBA /* Interface.storyboard */; };
 		BF0D586C1E8CDFC700D35FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0D586B1E8CDFC700D35FBA /* Assets.xcassets */; };
 		BF0D58731E8CDFC700D35FBA /* Workout WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BF0D58721E8CDFC700D35FBA /* Workout WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		BF0D587A1E8CDFC700D35FBA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D58791E8CDFC700D35FBA /* InterfaceController.swift */; };
 		BF0D587C1E8CDFC700D35FBA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D587B1E8CDFC700D35FBA /* ExtensionDelegate.swift */; };
 		BF0D587E1E8CDFC700D35FBA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D587D1E8CDFC700D35FBA /* NotificationController.swift */; };
 		BF0D58801E8CDFC700D35FBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0D587F1E8CDFC700D35FBA /* Assets.xcassets */; };
+		BF0D589C1E8CEA6E00D35FBA /* WorkoutViewInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D589B1E8CEA6E00D35FBA /* WorkoutViewInterfaceController.swift */; };
+		BF0D589D1E8CECA100D35FBA /* WorkoutViewInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D589B1E8CEA6E00D35FBA /* WorkoutViewInterfaceController.swift */; };
+		BF0D589F1E8CEF1900D35FBA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D589E1E8CEF1900D35FBA /* InterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,11 +102,12 @@
 		BF0D586D1E8CDFC700D35FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF0D58721E8CDFC700D35FBA /* Workout WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Workout WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF0D58781E8CDFC700D35FBA /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		BF0D58791E8CDFC700D35FBA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		BF0D587B1E8CDFC700D35FBA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		BF0D587D1E8CDFC700D35FBA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		BF0D587F1E8CDFC700D35FBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF0D58811E8CDFC700D35FBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0D589B1E8CEA6E00D35FBA /* WorkoutViewInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutViewInterfaceController.swift; sourceTree = "<group>"; };
+		BF0D589E1E8CEF1900D35FBA /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +203,7 @@
 				BF0D58681E8CDFC700D35FBA /* Interface.storyboard */,
 				BF0D586B1E8CDFC700D35FBA /* Assets.xcassets */,
 				BF0D586D1E8CDFC700D35FBA /* Info.plist */,
+				BF0D589B1E8CEA6E00D35FBA /* WorkoutViewInterfaceController.swift */,
 			);
 			path = "Workout WatchKit App";
 			sourceTree = "<group>";
@@ -207,12 +211,12 @@
 		BF0D58761E8CDFC700D35FBA /* Workout WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				BF0D58791E8CDFC700D35FBA /* InterfaceController.swift */,
 				BF0D587B1E8CDFC700D35FBA /* ExtensionDelegate.swift */,
 				BF0D587D1E8CDFC700D35FBA /* NotificationController.swift */,
 				BF0D587F1E8CDFC700D35FBA /* Assets.xcassets */,
 				BF0D58811E8CDFC700D35FBA /* Info.plist */,
 				BF0D58771E8CDFC700D35FBA /* Supporting Files */,
+				BF0D589E1E8CEF1900D35FBA /* InterfaceController.swift */,
 			);
 			path = "Workout WatchKit Extension";
 			sourceTree = "<group>";
@@ -347,6 +351,7 @@
 					BF0D58621E8CDFC700D35FBA = {
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = X7D6695Y4S;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					BF0D58711E8CDFC700D35FBA = {
@@ -428,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF0D58411E8CDFC700D35FBA /* ViewController.swift in Sources */,
+				BF0D589C1E8CEA6E00D35FBA /* WorkoutViewInterfaceController.swift in Sources */,
 				BF0D583F1E8CDFC700D35FBA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,9 +458,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF0D589D1E8CECA100D35FBA /* WorkoutViewInterfaceController.swift in Sources */,
+				BF0D589F1E8CEF1900D35FBA /* InterfaceController.swift in Sources */,
 				BF0D587E1E8CDFC700D35FBA /* NotificationController.swift in Sources */,
 				BF0D587C1E8CDFC700D35FBA /* ExtensionDelegate.swift in Sources */,
-				BF0D587A1E8CDFC700D35FBA /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,13 +652,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X7D6695Y4S;
 				IBSC_MODULE = Workout_WatchKit_Extension;
 				INFOPLIST_FILE = "Workout WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaux.Workout.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Workout/Workout WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
@@ -663,13 +674,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X7D6695Y4S;
 				IBSC_MODULE = Workout_WatchKit_Extension;
 				INFOPLIST_FILE = "Workout WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vaux.Workout.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Workout/Workout WatchKit App-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;

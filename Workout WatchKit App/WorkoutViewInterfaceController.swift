@@ -10,17 +10,25 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class WorkoutViewInterfaceController: WKInterfaceController {
 
+    @IBOutlet var myWorkoutLabel: WKInterfaceLabel!
+    @IBOutlet var myTimerLabel: WKInterfaceTimer!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        var currentDateTime = Date()
+        currentDateTime.addTimeInterval(60)
+        myTimerLabel.setDate(currentDateTime)
+        myTimerLabel.start()
     }
 
     override func didDeactivate() {
